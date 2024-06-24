@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .book-detail img{
+            width: 150px;
+        }
+    </style>
+    <script src="jQuery 3.7.1.js"></script>
+    <title>Tere Liye Bookstore</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="../image/serial anak/tere liyee.png" height="60000" class="logo">
+    
+        </div>
+        <div class="navbar">
+            <nav>
+                <a href="../main.html" class="navtext">Home</a>
+    
+                <a href="../allbooklist.html" class="navtext">All Book</a>
+    
+            </nav>
+        </div>
+    </header>
+
+<section>
+    <div id="head-fantasy">
+        <h2 class="heading">
+            <span>Serial Aksi</span>
+        </h2>
+        <p class="series-description">Serial Aksi karya Tere Liye adalah serangkaian novel yang menggabungkan elemen petualangan, fantasi, dan aksi. Serial ini menonjol dengan cerita yang kaya akan imajinasi, karakter-karakter yang kuat, serta alur yang menarik dan penuh kejutan. Serial Aksi terdiri dari beberapa buku yang saling berhubungan, masing-masing memiliki cerita yang mendalam dan karakter-karakter unik.</p>
+    </div>
+    <div class="book-details-container">
+        <!-- Add details of each book here -->
+        <a class="book-detail" onclick="openModal(event, 'Pulang', 'Tere Liye', 'Rp 89.999', 'Genre: Action', 'novel Pulang mengisahkan petualangan hidup remaja berusia 15 tahun yang memiliki kemampuan hebat dalam berburu babi hutan. Hal itu membuat Teuku Muda terkesan. Bapak tua itu kemudian membawanya ke kota untuk diasuh layaknya anak angkat. Tokoh utama dalam sinopsis novel Pulang bernama Bujang','../image/serial aksi/pulang.jpeg','../book-page/pulang.html')">
+            <img src="../image/serial aksi/pulang.jpeg" alt="Book 1">
+            <div class="book-info">
+                <h3>Pulang</h3>
+                <p>Action</p>
+                <p>novel Pulang mengisahkan petualangan hidup remaja berusia 15 tahun yang memiliki kemampuan hebat dalam berburu babi hutan. Hal itu membuat Teuku Muda terkesan. Bapak tua itu kemudian membawanya ke kota untuk diasuh layaknya anak angkat. Tokoh utama dalam sinopsis novel Pulang bernama Bujang</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Pergi', 'Tere Liye', 'Rp 89.999', 'Genre: Action', 'Pergi mengisahkan tentang petualangan Bujang dalam menemukan makna dari tujuan hidupnya, dan menemukan arti dari kata Pergi yang sesungguhnya. Bujang yang sering dijuluki sebagai “Sang Babi Hutan” memiliki nama asli Agam.','../image/serial aksi/pergi.jpeg','../book-page/pergi.html')">
+            <img src="../image/serial aksi/pergi.jpeg" alt="Book 2">
+            <div class="book-info">
+                <h3>Pergi</h3>
+                <p>Tere Liye</p>
+                <p>Action</p>
+                <p>Pergi mengisahkan tentang petualangan Bujang dalam menemukan makna dari tujuan hidupnya, dan menemukan arti dari kata Pergi yang sesungguhnya. Bujang yang sering dijuluki sebagai “Sang Babi Hutan” memiliki nama asli Agam.</p>
+            </div>
+        </a>
+
+        <a class="book-detail" href="#" onclick="openModal(event, 'Negeri Para Bedebah', 'Tere Liye', 'Rp 89.999', 'Genre: Action', 'Negeri Para Bedebah menceritakan kisah Thomas, seorang konsultan keuangan ternama yang disegani karena kecerdasan dan strateginya. Hidupnya yang tenang berubah drastis saat Bank Semesta terancam dilikuidasi.','../image/serial aksi/negeri para bedebah.jpeg','../book-page/negeriparabedebah.html')">
+            <img src="../image/serial aksi/negeri para bedebah.jpeg" alt="Book 1">
+            <div class="book-info">
+                <h3>Negeri Para Bedebah</h3>
+                <p>Tere Liye</p>
+                <p>Negeri Para Bedebah menceritakan kisah Thomas, seorang konsultan keuangan ternama yang disegani karena kecerdasan dan strateginya. Hidupnya yang tenang berubah drastis saat Bank Semesta terancam dilikuidasi.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Negeri di Ujung Tanduk', 'Tere Liye', 'Rp 89.999', 'Genre: Action', 'Novel Negeri Di Ujung Tanduk karya Tere Liye ini novel yang bercerita tentang perjuangan memenangkan partai politik demi terciptanya pemimpin yang jujur. Cerita dalam novel ini sangat menarik dan sederhana serta menggunakan bahasa yang mudah untuk dipahami.','../image/serial aksi/negeri di ujung tanduk.jpeg','../book-page/negeridiujung.html')">
+            <img src="../image/serial aksi/negeri di ujung tanduk.jpeg" alt="Book 2">
+            <div class="book-info">
+                <h3>Negeri di Ujung Tanduk</h3>
+                <p>Tere Liye</p>
+                <p>Novel Negeri Di Ujung Tanduk karya Tere Liye ini novel yang bercerita tentang perjuangan memenangkan partai politik demi terciptanya pemimpin yang jujur. Cerita dalam novel ini sangat menarik dan sederhana serta menggunakan bahasa yang mudah untuk dipahami.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Pulang Pergi', 'Tere Liye', 'Rp 99.999', 'Genre: Action', 'Novel Pulang Pergi menceritakan tentang Bujang yang tak tahu harus kemana setelah pulang dan pergi. Bujang yang sedang berkunjung ke makam orang tuanya mendapatkan sebuah pesan misterius. Bertuliskan pesan dari Krestniy Otets, pemimpin brotherhood Bratva.','../image/serial aksi/pulang pergi.jpeg','../book-page/pulangpergi.html')">
+            <img src="../image/serial aksi/pulang pergi.jpeg" alt="Book 1">
+            <div class="book-info">
+                <h3>Pulang Pergi</h3>
+                <p>Tere Liye</p>
+                <p>Novel Pulang Pergi menceritakan tentang Bujang yang tak tahu harus kemana setelah pulang dan pergi. Bujang yang sedang berkunjung ke makam orang tuanya mendapatkan sebuah pesan misterius. Bertuliskan pesan dari Krestniy Otets, pemimpin brotherhood Bratva.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#"  onclick="openModal(event, 'Bedebah Di Ujung Tanduk', 'Tere Liye', 'Rp 99.999', 'Genre: Action', 'Di Negeri di Ujung Tanduk, pencuri, perampok, berkeliaran menjadi penegak hukum. Di depan, di belakang, mereka tidak malu-malu lagi. Tapi setidaknya, Kawan, dalam situasi apapun, petarung sejati akan terus memilih kehormatan hidupnya. Bahkan ketika nasib di ujung tanduk.','../image/serial aksi/bedebah di ujung tanduk.jpeg','../book-page/bedebahdiujung.html')">
+            <img src="../image/serial aksi/bedebah di ujung tanduk.jpeg" alt="Book 2">
+            <div class="book-info">
+                <h3>Bedebah Di Ujung Tanduk</h3>
+                <p>Tere Liye</p>
+                <p>Di Negeri di Ujung Tanduk, pencuri, perampok, berkeliaran menjadi penegak hukum. Di depan, di belakang, mereka tidak malu-malu lagi. Tapi setidaknya, Kawan, dalam situasi apapun, petarung sejati akan terus memilih kehormatan hidupnya. Bahkan ketika nasib di ujung tanduk.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#"  onclick="openModal(event, 'Tanah Para Bandit', 'Tere Liye', 'Rp 99.999', 'Genre: Action', 'Tanah Para Bandit menceritakan tentang Padma, seorang perempuan muda yang telah berlatih secara fisik, pikiran, mental, dan jiwa sejak kecil. Ia dilatih oleh seorang kakek bernama Abu Syik.','../image/serial aksi/tanah para bandit.jpeg','../book-page/tanahparabandit.html')">
+            <img src="../image/serial aksi/tanah para bandit.jpeg" alt="Book 2">
+            <div class="book-info">
+                <h3>Tanah Para Bandit</h3>
+                <p>Tere Liye</p>
+                <p>Di Negeri di Ujung Tanduk, pencuri, perampok, berkeliaran menjadi penegak hukum. Di depan, di belakang, mereka tidak malu-malu lagi. Tapi setidaknya, Kawan, dalam situasi apapun, petarung sejati akan terus memilih kehormatan hidupnya. Bahkan ketika nasib di ujung tanduk.</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Modal for login -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalMain('loginModal')">&times;</span>
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="openModalMain('registerModal'); closeModalMain('loginModal');">Register</a></p>
+  </div>
+</div>
+
+<!-- Modal for register -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalMain('registerModal')">&times;</span>
+    <h2>Register</h2>
+    <form>
+      <label for="newUsername">Username:</label>
+      <input type="text" id="newUsername" name="newUsername"><br><br>
+      <label for="newPassword">Password:</label>
+      <input type="password" id="newPassword" name="newPassword"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="Book Image">
+        <h2 id="modal-title">Book Title</h2>
+        <p id="modal-author">Author</p>
+        <p id="modal-price">Price</p>
+        <p id="modal-genre">Genre</p>
+        <p id="modal-synopsis">Synopsis</p>
+        <button id="modal-link">Buy</button>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Payment Methods</h4>
+        <div class="payment-method">
+          <img class="logo" src="../image/footer/bca logo.png" alt="BCA Logo">
+          <img class="logo" src="../image/footer/mandiri logo.png" alt="Mandiri Logo">
+          <img class="logo" src="../image/footer/bni logo.png" alt="BNI Logo">
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Shipping Methods</h4>
+        <div class="shipping-method">
+          <img class="logo" src="../image/footer/idexpress logo.png" alt="JNE Logo">
+          <br>
+          <img class="logo" src="../image/footer/anteraja logo.png" alt="jnt Logo">
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Social Media</h4>
+        <div class="social-media">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="../image/footer/instagram logo.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="../image/footer/facebook logo.png" alt="Facebook">
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <img src="../image/footer/x logo.png" alt="Twitter">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .book-detail img{
+            width: 140px;
+        }
+        #modal-img{
+            width: 180px;
+        }
+    </style>
+    <script src="jQuery 3.7.1.js"></script>
+    <title>Tere Liye Bookstore</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="../image/serial anak/tere liyee.png" height="60000" class="logo">
+    
+        </div>
+        <div class="navbar">
+            <nav>
+                <a href="../main.html" class="navtext">Home</a>
+    
+                <a href="../allbooklist.html" class="navtext">All Book</a>
+    
+            </nav>
+        </div>
+    </header>
+
+<section>
+    <div id="head-fantasy">
+        <h2 class="heading">
+            <span>Serial The Gogons</span>
+        </h2>
+        <p class="series-description">Seri The Gogons adalah rangkaian novel petualangan dan fantasi yang ditulis oleh Tere Liye. Cerita ini mengikuti petualangan seorang anak laki-laki bernama James dan teman-temannya, Maya dan Tom, yang menemukan artefak kuno dengan kekuatan magis. Artefak ini membuka jalan bagi mereka ke dunia lain yang penuh dengan makhluk aneh dan kekuatan luar biasa. </p>
+    </div>
+    <div class="book-details-container">
+        <!-- Add details of each book here -->
+        <a class="book-detail" href="#" onclick="openModal(event, 'The Gogons: James & The Incredible Incidents', 'Tere Liye', 'Rp 80.000', 'Genre: Adventure', 'James adalah seorang anak laki-laki biasa yang tinggal di sebuah kota kecil. Hidupnya berubah drastis ketika ia menemukan sebuah artefak kuno yang memiliki kekuatan magis. Artefak ini ternyata adalah kunci menuju dunia lain yang penuh dengan makhluk aneh dan kekuatan luar biasa.','../image/gogons/1.jpg','../book-page/gogon1.html')">
+            <img src="../image/gogons/1.jpg" alt="Book 1">
+            <div class="book-info">
+                <h3>The Gogons: James & The Incredible Incidents</h3>
+                <p>Tere Liye</p>
+                <p>James adalah seorang anak laki-laki biasa yang tinggal di sebuah kota kecil. Hidupnya berubah drastis ketika ia menemukan sebuah artefak kuno yang memiliki kekuatan magis. Artefak ini ternyata adalah kunci menuju dunia lain yang penuh dengan makhluk aneh dan kekuatan luar biasa.
+
+                    Bersama dengan teman-temannya, Maya, seorang gadis pemberani, dan Tom, seorang jenius teknologi, James menemukan bahwa mereka harus melindungi dunia mereka dari ancaman yang datang dari dunia lain tersebut. Mereka menyebut diri mereka "The Gogons," sebuah tim yang bertujuan untuk menjaga keseimbangan antara dua dunia.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'The Gogons 2: The Enchanted Expedition', 'Tere Liye', 'Rp 80.000', 'Genre: Adventure', 'Setelah berhasil menyelamatkan dunia mereka dari ancaman pertama, James, Maya, dan Tom kembali ke kehidupan normal mereka. Namun, ketenangan mereka tidak berlangsung lama ketika mereka menemukan petunjuk baru tentang artefak kuno yang membawa mereka ke petualangan berikutnya.','../image/gogons/2.jfif','../book-page/gogon2.html')">
+            <img src="../image/gogons/2.jfif" alt="Book 1">
+            <div class="book-info">
+                <h3>The Gogons 2: The Enchanted Expedition</h3>
+                <p>Tere Liye</p>
+                <p>Setelah berhasil menyelamatkan dunia mereka dari ancaman pertama, James, Maya, dan Tom kembali ke kehidupan normal mereka. Namun, ketenangan mereka tidak berlangsung lama ketika mereka menemukan petunjuk baru tentang artefak kuno yang membawa mereka ke petualangan berikutnya.
+
+                    Petunjuk ini membawa mereka ke sebuah peta kuno yang menunjukkan lokasi dari sebuah dunia tersembunyi yang disebut "The Enchanted Realm". Di sana, mereka harus menemukan sumber kekuatan yang lebih besar untuk mencegah musuh yang lebih berbahaya dari menguasai kedua dunia.</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Modal for login -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalMain('loginModal')">&times;</span>
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="openModalMain('registerModal'); closeModalMain('loginModal');">Register</a></p>
+  </div>
+</div>
+
+<!-- Modal for register -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalMain('registerModal')">&times;</span>
+    <h2>Register</h2>
+    <form>
+      <label for="newUsername">Username:</label>
+      <input type="text" id="newUsername" name="newUsername"><br><br>
+      <label for="newPassword">Password:</label>
+      <input type="password" id="newPassword" name="newPassword"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="Book Image">
+        <h2 id="modal-title">Book Title</h2>
+        <p id="modal-author">Author</p>
+        <p id="modal-price">Price</p>
+        <p id="modal-genre">Genre</p>
+        <p id="modal-synopsis">Synopsis</p>
+        <button id="modal-link">Buy</button>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Payment Methods</h4>
+        <div class="payment-method">
+          <img class="logo" src="../image/footer/bca logo.png" alt="BCA Logo">
+          <img class="logo" src="../image/footer/mandiri logo.png" alt="Mandiri Logo">
+          <img class="logo" src="../image/footer/bni logo.png" alt="BNI Logo">
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Shipping Methods</h4>
+        <div class="shipping-method">
+          <img class="logo" src="../image/footer/idexpress logo.png" alt="JNE Logo">
+          <br>
+          <img class="logo" src="../image/footer/anteraja logo.png" alt="jnt Logo">
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Social Media</h4>
+        <div class="social-media">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="../image/footer/instagram logo.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="../image/footer/facebook logo.png" alt="Facebook">
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <img src="../image/footer/x logo.png" alt="Twitter">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>

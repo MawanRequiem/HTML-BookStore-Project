@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="jQuery 3.7.1.js"></script>
+    <style>
+        .book-detail img{
+            width: 140px;
+        }
+        #modal-img{
+            width: 180px;
+        }
+    </style>
+    <title>Tere Liye Bookstore</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="../image/serial anak/tere liyee.png" height="60000" class="logo">
+    
+        </div>
+        <div class="navbar">
+            <nav>
+                <a href="../main.html" class="navtext">Home</a>
+    
+                <a href="../allbooklist.html" class="navtext">All Book</a>
+    
+            </nav>
+        </div>
+    </header>
+
+<section>
+    <div id="head-fantasy">
+        <h2 class="heading">
+            <span>Non Serial</span>
+        </h2>
+        <p class="series-description">Tere Liye adalah salah satu penulis produktif Indonesia yang telah menghasilkan berbagai karya sastra yang tidak hanya menarik tetapi juga penuh dengan nilai-nilai kehidupan. Selain serial-serial yang populer, Tere Liye juga menulis banyak novel non-serial yang masing-masing berdiri sendiri dengan cerita yang unik dan mendalam.</p>
+    </div>
+    <div class="book-details-container">
+        <!-- Add details of each book here -->
+        <a class="book-detail" href="#" onclick="openModal(event, 'Hujan', 'Tere Liye', 'Rp 75.000', 'Genre: Romanca', 'Hujan merupakan karya ke-25 penulis Tere Liye. Dalam 24 karya sebelumnya terdapat novel, kumpulan cerpen, dan kumpulan sajak. Novel best-seller ini menceritakan tentang kehidupan setelah bencana alam di yaitu letusan gunung dan gempa bumi yang sangat dahsyat di tahun 2042, Tania.','../image/non seri/Hujan.jpeg','../book-page/hujan.html')">
+            <img src="../image/non seri/Hujan.jpeg" alt="Book 1">
+            <div class="book-info">
+                <h3>Hujan</h3>
+                <p>Tere Liye</p>
+                <p>Hujan merupakan karya ke-25 penulis Tere Liye. Dalam 24 karya sebelumnya terdapat novel, kumpulan cerpen, dan kumpulan sajak. Novel best-seller ini menceritakan tentang kehidupan setelah bencana alam di yaitu letusan gunung dan gempa bumi yang sangat dahsyat di tahun 2042, Tania.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Daun yang Jatuh taj jauh dari Angin', 'Tere Liye', 'Rp 80.000', 'Genre: Romance', 'Latar belakang dan alur buku “Daun yang Jatuh Tak Pernah Membenci Angin” Merupakan kisah yang menceritakan seorang anak perempuan yang bernama Tania, dia hanya memiliki ibu dan adik di hidupnya, ayahnya sudah meninggalkan dunia disaat umurnya delapan tahun karena penyakit TBC yang dideritanya.','../image/non seri/daun.jpeg','../book-page/daun.html')">
+            <img src="../image/non seri/daun.jpeg" alt="Book 1">
+            <div class="book-info">
+                <h3>Daun yang Jatuh tak Jauh Dari Angin</h3>
+                <p>Tere Liye</p>
+                <p>Latar belakang dan alur buku “Daun yang Jatuh Tak Pernah Membenci Angin” Merupakan kisah yang menceritakan seorang anak perempuan yang bernama Tania, dia hanya memiliki ibu dan adik di hidupnya, ayahnya sudah meninggalkan dunia disaat umurnya delapan tahun karena penyakit TBC yang dideritanya.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Aku dan Sepucuk Angpau Merah', 'Tere Liye', 'Rp 85.000', 'Genre: Romance', 'Novel Kau, Aku dan Sepucuk Angpau Merah karya Darwis Tere Liye ini menceritakan tentang sebuah kisah cinta yang sangat sulit antara pemuda asal Kalimantan bernama Borno dan pemuda Tionghoa bernama Mei. Gagal menjadi pekerja pabrik karet, sarang burung walet, petugas karcis, akhirnya menjadi pengemudi Speedboat','../image/non seri/angpau merah.jpeg','../book-page/angpau.html')">
+            <img src="../image/non seri/angpau merah.jpeg" alt="Book 1">
+            <div class="book-info">
+                <h3>Aku dan Sepucuk Angpau Merah</h3>
+                <p>Tere Liye</p>
+                <p>Novel Kau, Aku dan Sepucuk Angpau Merah karya Darwis Tere Liye ini menceritakan tentang sebuah kisah cinta yang sangat sulit antara pemuda asal Kalimantan bernama Borno dan pemuda Tionghoa bernama Mei. Gagal menjadi pekerja pabrik karet, sarang burung walet, petugas karcis, akhirnya menjadi pengemudi Speedboat</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Sunset Bersama Rosie', 'Tere Liye', 'Rp 80.000', 'Genre: Romance', 'Novel Sunset Bersama Rosie karya Tere Liye Novel menceritakan tentang kisah percintaan seorang pria bernama Tegar, yakni tokoh utama di novel ini serta sebagai pelaku sudut pertama. Tokoh Tegar diceritakan bahwa ia memiliki seorang sahabat bernama Rosie, mereka sudah bersahabat sejak kecil dan sering bermain bersama.','../image/non seri/sunset bersama rosie.jpeg','../book-page/sunset.html')">
+            <img src="../image/non seri/sunset bersama rosie.jpeg" alt="Book 1">
+            <div class="book-info">
+                <h3>Sunset Bersama Rosie</h3>
+                <p>Tere Liye</p>
+                <p>Novel Sunset Bersama Rosie karya Tere Liye Novel menceritakan tentang kisah percintaan seorang pria bernama Tegar, yakni tokoh utama di novel ini serta sebagai pelaku sudut pertama. Tokoh Tegar diceritakan bahwa ia memiliki seorang sahabat bernama Rosie, mereka sudah bersahabat sejak kecil dan sering bermain bersama.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Sepotong Hati yang Baru', 'Tere Liye', 'Rp 75.000', 'Genre: Romanca', 'Kita hanya memiliki sepotong hati, bukan? Satu-satunya. Lalu, bagaimana jika hati itu terluka? Bagaimana hati kita justru disakiti oleh orang yang kita cintai? Aduh, apakah kita bisa mengobatinya? Apakah luka tersebut bisa sembuh, tanpa meninggalkan bekas? Atau jangan-jangan, kita harus menggantinya dengan sepotong hati yang baru.','../image/non seri/Sepotong hati.jpeg','../book-page/sepotonghati.html')">
+            <img src="../image/non seri/Sepotong hati.jpeg" alt="Book 1">
+            <div class="book-info">
+                <h3>Sepotong Hati yang Baru</h3>
+                <p>Tere Liye</p>
+                <p>Kita hanya memiliki sepotong hati, bukan? Satu-satunya. Lalu, bagaimana jika hati itu terluka? Bagaimana hati kita justru disakiti oleh orang yang kita cintai? Aduh, apakah kita bisa mengobatinya? Apakah luka tersebut bisa sembuh, tanpa meninggalkan bekas? Atau jangan-jangan, kita harus menggantinya dengan sepotong hati yang baru.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Cintaku Antara Jakarta dan Kuala Lumpur', 'Tere Liye', 'Rp 75.000', 'Genre: Romanca', 'Berkisah tentang James, dan Tania yang sudah bersahabat sejak mereka masih kecil. Suatu hari, Tania memaksa James untuk menghadiri konser penyanyi terkenal dari negeri jiran, bernama Siti. Tidak disangka, pertemuan pertama itu merupakan awal dari rangkain kisah cinta James terhadap Siti. Namun, pria cerdas nan lugu ini tidak pernah menyadari pertanda-pertanda dari sahabat masa kecilnya, Tania.','../image/non seri/jakarta kuala lumpur.jpeg','../book-page/jakartakuala.html')">
+            <img src="../image/non seri/jakarta kuala lumpur.jpeg" alt="Book 1">
+            <div class="book-info">
+                <h3>Cintaku Antara Jakarta dan Kuala Lumpur</h3>
+                <p>Tere Liye</p>
+                <p>Berkisah tentang James, dan Tania yang sudah bersahabat sejak mereka masih kecil. Suatu hari, Tania memaksa James untuk menghadiri konser penyanyi terkenal dari negeri jiran, bernama Siti. Tidak disangka, pertemuan pertama itu merupakan awal dari rangkain kisah cinta James terhadap Siti. Namun, pria cerdas nan lugu ini tidak pernah menyadari pertanda-pertanda dari sahabat masa kecilnya, Tania.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event,'Tentang Kamu', 'Tere Liye', 'Rp 115.000', 'Genre: Romance', 'Tentang Kamu, novel dengan tokoh utama bernama Zaman Zulkarnaen. Ia merupakan lulusan magister hukum di Oxford University. Zaman bekerja di sebuah firma hukum, tepatnya di Belgrave, London. Firma hukum tersebut bernama Thompson & Co., ia berada di bidang Elder Law yang menjadi legendaris sebab prinsip kuat yang dipegang olehnya.','../image/non seri/tentangkamu.jpg','../book-page/tentangkamu.html')">
+            <img src="../image/non seri/tentangkamu.jpg" alt="Book 1">
+            <div class="book-info">
+                <h3>Tentang Kamu</h3>
+                <p>Tere Liye</p>
+                <p>Tentang Kamu, novel dengan tokoh utama bernama Zaman Zulkarnaen. Ia merupakan lulusan magister hukum di Oxford University. Zaman bekerja di sebuah firma hukum, tepatnya di Belgrave, London. Firma hukum tersebut bernama Thompson & Co., ia berada di bidang Elder Law yang menjadi legendaris sebab prinsip kuat yang dipegang olehnya.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Teruslah Bodoh Jangan Pintar', 'Tere Liye', 'Rp 90.000', 'Genre: Action', 'Novel ini mengikuti kisah seorang anak muda bernama Budi yang tumbuh besar dengan pemahaman bahwa kepintaran adalah segalanya. Ia selalu berusaha menjadi yang terbaik dalam segala hal, mulai dari akademis hingga kehidupan sosialnya. Namun, dalam perjalanannya, ia menyadari bahwa kepintaran yang selama ini dikejar ternyata tidak selalu membawa kebahagiaan.','../image/non seri/teruslahbodoh.jpg','../book-page/teruslahbodoh.html')">
+            <img src="../image/non seri/teruslahbodoh.jpg" alt="Book 1">
+            <div class="book-info">
+                <h3>Teruslah Bodoh Jangan Pintar</h3>
+                <p>Tere Liye</p>
+                <p>Novel ini mengikuti kisah seorang anak muda bernama Budi yang tumbuh besar dengan pemahaman bahwa kepintaran adalah segalanya. Ia selalu berusaha menjadi yang terbaik dalam segala hal, mulai dari akademis hingga kehidupan sosialnya. Namun, dalam perjalanannya, ia menyadari bahwa kepintaran yang selama ini dikejar ternyata tidak selalu membawa kebahagiaan.</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Modal for login -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalMain('loginModal')">&times;</span>
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="openModalMain('registerModal'); closeModalMain('loginModal');">Register</a></p>
+  </div>
+</div>
+
+<!-- Modal for register -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalMain('registerModal')">&times;</span>
+    <h2>Register</h2>
+    <form>
+      <label for="newUsername">Username:</label>
+      <input type="text" id="newUsername" name="newUsername"><br><br>
+      <label for="newPassword">Password:</label>
+      <input type="password" id="newPassword" name="newPassword"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="Book Image">
+        <h2 id="modal-title">Book Title</h2>
+        <p id="modal-author">Author</p>
+        <p id="modal-price">Price</p>
+        <p id="modal-genre">Genre</p>
+        <p id="modal-synopsis">Synopsis</p>
+        <button id="modal-link">Buy</button>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Payment Methods</h4>
+        <div class="payment-method">
+          <img class="logo" src="../image/footer/bca logo.png" alt="BCA Logo">
+          <img class="logo" src="../image/footer/mandiri logo.png" alt="Mandiri Logo">
+          <img class="logo" src="../image/footer/bni logo.png" alt="BNI Logo">
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Shipping Methods</h4>
+        <div class="shipping-method">
+          <img class="logo" src="../image/footer/idexpress logo.png" alt="JNE Logo">
+          <br>
+          <img class="logo" src="../image/footer/anteraja logo.png" alt="jnt Logo">
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Social Media</h4>
+        <div class="social-media">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="../image/footer/instagram logo.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="../image/footer/facebook logo.png" alt="Facebook">
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <img src="../image/footer/x logo.png" alt="Twitter">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>

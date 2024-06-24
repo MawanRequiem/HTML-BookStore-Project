@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="jQuery 3.7.1.js"></script>
+    <title>Tere Liye Bookstore</title>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+        <img src="https://www.periplus.com/image/logo-periplus1-.png" class="logo">
+        <div class="navbar-icons">
+            <div class="cart-icon">
+                <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/000000/shopping-cart.png" alt="Cart"></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><img src="https://img.icons8.com/ios-glyphs/30/000000/user.png" alt="Account"></button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="openModalMain('loginModal')">Login</a>
+                    <a href="#" onclick="openModalMain('registerModal')">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <nav>
+            <a href="main.html" class="navtext">Home</a>
+            <a href="help.html" class="navtext">Series</a>
+            <a href="allbooklist.html" class="navtext">All Book</a>
+            <a href="#" class="navtext">Categories</a>
+        </nav>
+    </div>
+</header>
+
+<section>
+    <div id="head-fantasy">
+        <h2 class="heading">
+            <span>Romance</span>
+          </h2>
+    </div>
+
+    <div class="book-list-genre">
+        <a href="book1.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 1">
+            <h2>Book Title 1</h2>
+            <p>Author 1</p>
+            <p>$10.00</p>
+        </a>
+        <a href="book2.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 2">
+            <h2>Book Title 2</h2>
+            <p>Author 2</p>
+            <p>$15.00</p>
+        </a>
+        <a href="book3.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 3">
+            <h2>Book Title 3</h2>
+            <p>Author 3</p>
+            <p>$20.00</p>
+        </a>
+        <a href="book1.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 1">
+            <h2>Book Title 1</h2>
+            <p>Author 1</p>
+            <p>$10.00</p>
+        </a>
+        <a href="book2.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 2">
+            <h2>Book Title 2</h2>
+            <p>Author 2</p>
+            <p>$15.00</p>
+        </a>
+        <a href="book3.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 3">
+            <h2>Book Title 3</h2>
+            <p>Author 3</p>
+            <p>$20.00</p>
+        </a>
+        <a href="book1.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 1">
+            <h2>Book Title 1</h2>
+            <p>Author 1</p>
+            <p>$10.00</p>
+        </a>
+        <a href="book2.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 2">
+            <h2>Book Title 2</h2>
+            <p>Author 2</p>
+            <p>$15.00</p>
+        </a>
+        <a href="book3.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 3">
+            <h2>Book Title 3</h2>
+            <p>Author 3</p>
+            <p>$20.00</p>
+        </a>
+        <a href="book1.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 1">
+            <h2>Book Title 1</h2>
+            <p>Author 1</p>
+            <p>$10.00</p>
+        </a>
+        <a href="book2.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 2">
+            <h2>Book Title 2</h2>
+            <p>Author 2</p>
+            <p>$15.00</p>
+        </a>
+        <a href="book3.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 3">
+            <h2>Book Title 3</h2>
+            <p>Author 3</p>
+            <p>$20.00</p>
+        </a>
+        <a href="book1.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 1">
+            <h2>Book Title 1</h2>
+            <p>Author 1</p>
+            <p>$10.00</p>
+        </a>
+        <a href="book2.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 2">
+            <h2>Book Title 2</h2>
+            <p>Author 2</p>
+            <p>$15.00</p>
+        </a>
+        <a href="book3.html" class="book-item-genre">
+            <img src="https://via.placeholder.com/130" alt="Book 3">
+            <h2>Book Title 3</h2>
+            <p>Author 3</p>
+            <p>$20.00</p>
+        </a>
+    </div>
+</section>
+
+<!-- Modal for login -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalMain('loginModal')">&times;</span>
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="openModalMain('registerModal'); closeModalMain('loginModal');">Register</a></p>
+  </div>
+</div>
+
+<!-- Modal for register -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalMain('registerModal')">&times;</span>
+    <h2>Register</h2>
+    <form>
+      <label for="newUsername">Username:</label>
+      <input type="text" id="newUsername" name="newUsername"><br><br>
+      <label for="newPassword">Password:</label>
+      <input type="password" id="newPassword" name="newPassword"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

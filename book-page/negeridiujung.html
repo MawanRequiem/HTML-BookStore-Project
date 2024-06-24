@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Checkout - Bookstore</title>
+    <style>
+        .checkout-modal, .thank-you-modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .submit-btn, .confirm-btn, .finish-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="../image/serial anak/tere liyee.png" height="60000" class="logo">
+    
+        </div>
+        <div class="navbar">
+            <nav>
+                <a href="../main.html" class="navtext">Home</a>
+    
+                <a href="../allbooklist.html" class="navtext">All Book</a>
+    
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="checkout-form">
+            <div class="checkout-summary">
+                <h2>Ringkasan Belanja</h2>
+                <div class="product">
+                    <img id="product-image" src="../image/Serial Aksi/negeri di ujung tanduk.jpeg" alt="Product Image">
+                    <div class="product-details">
+                        <h3 id="product-title">Negeri di Ujung Tanduk</h3>
+                        <p id="product-price">Rp 89.000</p>
+                        <label for="quantity">Jumlah:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                </div>
+                <div class="total">
+                    <h3>Total Belanja:</h3>
+                    <p id="total-price"></p>
+                </div>
+            </div>
+
+            <div class="checkout-details">
+                <h2>Detail Pembayaran</h2>
+                <form id="checkoutForm">
+                    <label for="fname">Nama Depan</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Masukkan nama depan Anda..">
+                    <label for="lname">Nama Belakang</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Masukkan nama belakang Anda..">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda..">
+                    <label for="address">Alamat</label>
+                    <input type="text" id="address" name="address" placeholder="Masukkan alamat lengkap Anda..">
+                    <label for="city">Kota</label>
+                    <input type="text" id="city" name="city" placeholder="Masukkan nama kota Anda..">
+                    <label for="zip">Kode Pos</label>
+                    <input type="text" id="zip" name="zip" pattern="[0-9]*" placeholder="Masukkan kode pos Anda Berupa Nomor" />
+                    <label for="payment-method">Metode Pembayaran</label>
+                    <select id="payment-method" name="payment-method">
+                        <option value="credit-card">Credit Card</option>
+                        <option value="bank-transfer">Bank Transfer</option>
+                        <option value="cash-on-delivery">Cash on Delivery</option>
+                    </select>
+                    <button type="submit" class="submit-btn">CHECKOUT</button>
+                    <button type="button" class="submit-btn" onclick="finishOrder()" style="background-color: red;">BATAL</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkout-confirmation-modal" class="checkout-modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeConfirmationModal()">&times;</span>
+            <h2>Konfirmasi Pesanan</h2>
+            <p id="confirmation-details"></p>
+            <p>Kode Pembayaran: <strong id="payment-code"></strong></p>
+            <button class="confirm-btn" onclick="confirmOrder()">Konfirmasi Pesanan</button>
+        </div>
+    </div>
+
+    <div id="thank-you-modal" class="thank-you-modal">
+        <div class="modal-content">
+            <h2>Terima Kasih</h2>
+            <p>Terima kasih sudah melakukan order!</p>
+            <button class="finish-btn" onclick="finishOrder()">Selesai</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const quantityInput = document.getElementById('quantity');
+            const totalPriceElement = document.getElementById('total-price');
+            const productPrice = parseFloat(document.getElementById('product-price').textContent.replace(/[^0-9.-]+/g,""));
+
+            function calculateTotalPrice() {
+                const quantity = quantityInput.value;
+                const totalPrice = productPrice * quantity;
+                totalPriceElement.textContent = 'Rp ' + totalPrice.toLocaleString('id-ID', { minimumFractionDigits: 3 });
+            }
+
+            quantityInput.addEventListener('input', calculateTotalPrice);
+            calculateTotalPrice();  // Initial call to set the total price
+
+            const checkoutForm = document.getElementById('checkoutForm');
+            const confirmationModal = document.getElementById('checkout-confirmation-modal');
+            const confirmationDetails = document.getElementById('confirmation-details');
+            const paymentCode = document.getElementById('payment-code');
+            const thankYouModal = document.getElementById('thank-you-modal');
+
+            checkoutForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const formData = new FormData(checkoutForm);
+                let summary = `
+                    <p><strong>Nama:</strong> ${formData.get('firstname')} ${formData.get('lastname')}</p>
+                    <p><strong>Email:</strong> ${formData.get('email')}</p>
+                    <p><strong>Alamat:</strong> ${formData.get('address')}</p>
+                    <p><strong>Kota:</strong> ${formData.get('city')}</p>
+                    <p><strong>Kode Pos:</strong> ${formData.get('zip')}</p>
+                    <p><strong>Metode Pembayaran:</strong> ${formData.get('payment-method')}</p>
+                    <p><strong>Total Belanja:</strong> ${totalPriceElement.textContent}</p>
+                `;
+
+                confirmationDetails.innerHTML = summary;
+                paymentCode.textContent = generatePaymentCode();
+                openConfirmationModal();
+            });
+
+            function generatePaymentCode() {
+            return Math.floor(Math.random() * 10**16).toString().padStart(16, '0');
+            }
+
+            function openConfirmationModal() {
+                confirmationModal.style.display = 'block';
+            }
+
+            function closeConfirmationModal() {
+                confirmationModal.style.display = 'none';
+            }
+
+            function confirmOrder() {
+                closeConfirmationModal();
+                openThankYouModal();
+            }
+
+            function openThankYouModal() {
+                thankYouModal.style.display = 'block';
+            }
+
+            function finishOrder() {
+                window.location.href = '../main.html';
+            }
+
+            window.closeConfirmationModal = closeConfirmationModal;  // Expose to global scope
+            window.confirmOrder = confirmOrder;  // Expose to global scope
+            window.finishOrder = finishOrder;  // Expose to global scope
+        });
+    </script>
+</body>
+</html>

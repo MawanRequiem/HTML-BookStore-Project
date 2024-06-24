@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .book-detail img{
+            width: 140px;
+        }
+        #modal-img{
+            width: 180px;
+        }
+    </style>
+    <script src="jQuery 3.7.1.js"></script>
+    <title>Tere Liye Bookstore</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <img src="../image/serial anak/tere liyee.png" height="60000" class="logo">
+    
+        </div>
+        <div class="navbar">
+            <nav>
+                <a href="../main.html" class="navtext">Home</a>
+    
+                <a href="../allbooklist.html" class="navtext">All Book</a>
+    
+            </nav>
+        </div>
+    </header>
+
+<section>
+    <div id="head-fantasy">
+        <h2 class="heading">
+            <span>Serial Dunia Paralel</span>
+        </h2>
+        <p class="series-description">Serial Dunia Paralel ini terdiri dari series novel yang berurutan. Setiap novelnya mempunyai ceritanya masing-masing yang tentunya menakjubkan. Serial novel bergenrekan fantasi ini wajib kalian miliki sebab kalian akan diajak untuk berjelajah dan berpetualang ke dunia paralel bersama ketiga sahabat, yakni Raib, Ali, dan Seli.
+<br>
+            Meski novel ini bertemakan fantasi, Tere Liye selaku penulis pun tak lupa untuk menyiratkan berbagai pesan sederhana, seperti makna dari persahabatan, niat yang tulus, membantu terhadap sesama, dan berbagai kebaikan lainnya.</p>
+    </div>
+    <div class="book-details-container">
+        <!-- Add details of each book here -->
+        <a class="book-detail" href="#" onclick="openModal(event,'Bumi', 'Tere Liye', 'Rp 90.000', 'Genre: Fantasy', 'Raib adalah seorang gadis berumur 15 tahun. Secara umum, tidak ada yang berbeda dari Raib dengan remaja pada umumnya. Namun, Raib memiliki rahasia yang ia simpan sendiri sejak kecil, yakni kemampuan untuk menghilangkan diri. Hanya dengan mengatupkan kedua tangannya di depan wajahnya, Raib dapat melenyapkan seluruh tubuhnya dengan seketika.','../image/dunia paralel/bumi.jpg','../book-page/bumi.html')">
+            <img src="../image/dunia paralel/bumi.jpg" alt="Book 1">
+            <div class="book-info">
+                <h3>Bumi</h3>
+                <p>Tere Liye</p>
+                <p>Raib adalah seorang gadis berumur 15 tahun. Secara umum, tidak ada yang berbeda dari Raib dengan remaja pada umumnya. Namun, Raib memiliki rahasia yang ia simpan sendiri sejak kecil, yakni kemampuan untuk menghilangkan diri. Hanya dengan mengatupkan kedua tangannya di depan wajahnya, Raib dapat melenyapkan seluruh tubuhnya dengan seketika.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event,'Bulan', 'Tere Liye', 'Rp 90.000', 'Genre: Fantasy', 'Petualangan Raib, Seli, dan Ali berlanjut.Beberapa bulan setelah peristiwa klan bulan, Miss Selena akhirnya muncul di sekolah. Ia membawa kabar menggembirakan untuk anak-anak yang berjiwa petualang seperti Raib, Seli, dan Ali. Miss Selena bersama dengan Av akan mengajak mereka untuk mengunjungi klan matahari selama dua minggu. Av berencana akan bertemu dengan ketua konsil klan matahari, yang menguasai klan matahari sepenuhnya untuk mencari sekutu dalam menghadapi Tamus yang diperkirakan akan bebas dan juga membebaskan raja tanpa mahkota.','../image/dunia paralel/Bulan.jpg','../book-page/bulan.html')">
+            <img src="../image/dunia paralel/Bulan.jpg" alt="Book 2">
+            <div class="book-info">
+                <h3>Bulan</h3>
+                <p>Tere Liye</p>
+                <p>Petualangan Raib, Seli, dan Ali berlanjut.Beberapa bulan setelah peristiwa klan bulan, Miss Selena akhirnya muncul di sekolah. Ia membawa kabar menggembirakan untuk anak-anak yang berjiwa petualang seperti Raib, Seli, dan Ali. Miss Selena bersama dengan Av akan mengajak mereka untuk mengunjungi klan matahari selama dua minggu. Av berencana akan bertemu dengan ketua konsil klan matahari, yang menguasai klan matahari sepenuhnya untuk mencari sekutu dalam menghadapi Tamus yang diperkirakan akan bebas dan juga membebaskan raja tanpa mahkota.</p>
+            </div>
+        </a>
+
+        <a class="book-detail" href="#" onclick="openModal(event, 'Matahari', 'Tere Liye', 'Rp 80.000', 'Genre: Fantasy', 'Raib, Ali, dan Seli dirundung duka atas tewasnya Ily, sahabat mereka, pada pertarungan di Klan Matahari. Tak hanya mereka, para kesatria Klan Bulan juga merasakan hal sama, sampai membuat Miss Selena tak bisa kembali ke Klan Bumi.','../image/dunia paralel/matahari.jpg','../book-page/matahari.html')">
+            <img src="../image/dunia paralel/matahari.jpg" alt="Book 1">
+            <div class="book-info">
+                <h3>Matahari</h3>
+                <p>Tere Liye</p>
+                <p>Raib, Ali, dan Seli dirundung duka atas tewasnya Ily, sahabat mereka, pada pertarungan di Klan Matahari. Tak hanya mereka, para kesatria Klan Bulan juga merasakan hal sama, sampai membuat Miss Selena tak bisa kembali ke Klan Bumi.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Bintang', 'Tere Liye', 'Rp 80.000', 'Genre: Fantasy', 'Raib, Seli dan Ali meneruskan petualangan mereka. Mereka harus menemukan pasak bumi yang akan di runtuh kan oleh sekretaris Dewan kota. Oleh karna itu, Raib, Seli dan Ali melibatkan orang-orang yang berasal dari klan Bulan dan Matahari. Petualangan kali ini dibantu oleh Miss Selena sebagai pemimpin rombongan, juga 10 anggota pasukan bayangan dan pasukan matahari.','../image/dunia paralel/bintang.jpg','../book-page/bintang.html')">
+            <img src="../image/dunia paralel/bintang.jpg" alt="Book 2">
+            <div class="book-info">
+                <h3>Bintang</h3>
+                <p>Tere Liye</p>
+                <p>Raib, Seli dan Ali meneruskan petualangan mereka. Mereka harus menemukan pasak bumi yang akan di runtuh kan oleh sekretaris Dewan kota. Oleh karna itu, Raib, Seli dan Ali melibatkan orang-orang yang berasal dari klan Bulan dan Matahari. Petualangan kali ini dibantu oleh Miss Selena sebagai pemimpin rombongan, juga 10 anggota pasukan bayangan dan pasukan matahari.</p>
+            </div>
+        </a>
+
+        <a class="book-detail" href="#" nclick="openModal(event, 'Ceros dan Batozar', 'Tere Liye', 'Rp 80.000', 'Genre: Fantasy', 'Ketika mengikuti karyawisata di suatu tempat wisata, alat pelacak milik Ali mendeteksi adanya energi dunia paralel yang sangat kuat di sekitar situ. Penasaran, Ali bersikeras ingin menyelidikinya. Raib dan Seli yang awalnya menolak akhirnya mau tak mau mengikuti. Menaiki ILY, mereka bertiga kabur dari rombongan dan memulai perjalanan mencari sumber energi dunia paralel tersebut, yang diduga berasal dari bawah tanah. Kemudian sampailah mereka di sebuah gerbang batu di dasar laut. Mereka menelusurinya hingga memasuki sebuah ruangan kuno.','../image/dunia paralel/cerosdanbatozar.jpg','../book-page/cerosdanbatozar.html')">
+            <img src="../image/dunia paralel/cerosdanbatozar.jpg" alt="Book 1">
+            <div class="book-info">
+                <h3>Ceros dan Batozar</h3>
+                <p>Tere Liye</p>
+                <p>Ketika mengikuti karyawisata di suatu tempat wisata, alat pelacak milik Ali mendeteksi adanya energi dunia paralel yang sangat kuat di sekitar situ. Penasaran, Ali bersikeras ingin menyelidikinya. Raib dan Seli yang awalnya menolak akhirnya mau tak mau mengikuti. Menaiki ILY, mereka bertiga kabur dari rombongan dan memulai perjalanan mencari sumber energi dunia paralel tersebut, yang diduga berasal dari bawah tanah. Kemudian sampailah mereka di sebuah gerbang batu di dasar laut. Mereka menelusurinya hingga memasuki sebuah ruangan kuno.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Komet', 'Tere Liye', 'Rp 80.000', 'Genre: Fantasy', 'Saat mengetahui si Tanpa Mahkota sedang mencari Klan Komet untuk menggenapkan kekuatannya, Ali sibuk mencari tahu tentang Klan Komet melalui buku-buku yang ditinggalkan Zaad di Ruangan Padang Sampah Klan Bintang. Portal menuju Klan Komet ternyata ada di Klan Matahari. Ali mengabari Av dan Miss Selena tentang si Tanpa Mahkota yang mencari Komet dan portal menuju Klan Komet di Klan Matahari.','../image/dunia paralel/komet.jpg','../book-page/komet.html')">
+            <img src="../image/dunia paralel/komet.jpg" alt="Book 2">
+            <div class="book-info">
+                <h3>Komet</h3>
+                <p>Tere Liye</p>
+                <p>Saat mengetahui si Tanpa Mahkota sedang mencari Klan Komet untuk menggenapkan kekuatannya, Ali sibuk mencari tahu tentang Klan Komet melalui buku-buku yang ditinggalkan Zaad di Ruangan Padang Sampah Klan Bintang. Portal menuju Klan Komet ternyata ada di Klan Matahari. Ali mengabari Av dan Miss Selena tentang si Tanpa Mahkota yang mencari Komet dan portal menuju Klan Komet di Klan Matahari.</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Komet Minor', 'Tere Liye', 'Rp 80.000', 'Genre: Fantasy', 'Sebelum kita mulai, mari kita mebaca basmalah. Bismillah. Selanjutnya buku ini melanjutan kisah dari buku sebelumnya yaitu Komet, dimana berakhir saat itu berupa pengkhiatan oleh Max alias Si Tanpa Mahkota yang mengkhianati kebaikan tiga remaja petarung yang berasal dari klan berbeda: Raib (Klan Bulan), Seli (Klan Matahari, dan Ali (Klan Bumi)).','../image/dunia paralel/kometminor.jpg','../book-page/kometminor.html')">
+            <img src="../image/dunia paralel/kometminor.jpg" alt="Book 2">
+            <div class="book-info">
+                <h3>Komet Minor</h3>
+                <p>Tere Liye</p>
+                <p>Sebelum kita mulai, mari kita mebaca basmalah. Bismillah. Selanjutnya buku ini melanjutan kisah dari buku sebelumnya yaitu Komet, dimana berakhir saat itu berupa pengkhiatan oleh Max alias Si Tanpa Mahkota yang mengkhianati kebaikan tiga remaja petarung yang berasal dari klan berbeda: Raib (Klan Bulan), Seli (Klan Matahari, dan Ali (Klan Bumi).)</p>
+            </div>
+        </a>
+        <a class="book-detail" href="#" onclick="openModal(event, 'Selena', 'Tere Liye', 'Rp 80.000', 'Genre: Fantasy', 'Buku Selena berlatar di Klan Bulan, menceritakan sosok Selena guru matematika Raib, Seli, dan Ali di Klan Bumi. Kisahnya dimulai saat Selena berusia 15 tahun, menjadi anak yatim piatu karena Ayahnya meninggal, dan kemudian menyusul ibunya, hidup miskin dan tinggal di Distrik Sabit Enam.','../image/dunia paralel/selena.jpg','../book-page/selena.html')">
+            <img src="../image/dunia paralel/selena.jpg" alt="Book 2">
+            <div class="book-info">
+                <h3>Selena</h3>
+                <p>Tere Liye</p>
+                <p>Buku Selena berlatar di Klan Bulan, menceritakan sosok Selena guru matematika Raib, Seli, dan Ali di Klan Bumi. Kisahnya dimulai saat Selena berusia 15 tahun, menjadi anak yatim piatu karena Ayahnya meninggal, dan kemudian menyusul ibunya, hidup miskin dan tinggal di Distrik Sabit Enam.</p>
+            </div>
+        </a>
+        <!-- Add more book details as needed -->
+    </div>
+</section>
+
+<!-- Modal for login -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalMain('loginModal')">&times;</span>
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#" onclick="openModalMain('registerModal'); closeModalMain('loginModal');">Register</a></p>
+  </div>
+</div>
+
+<!-- Modal for register -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModalMain('registerModal')">&times;</span>
+    <h2>Register</h2>
+    <form>
+      <label for="newUsername">Username:</label>
+      <input type="text" id="newUsername" name="newUsername"><br><br>
+      <label for="newPassword">Password:</label>
+      <input type="password" id="newPassword" name="newPassword"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="Book Image">
+        <h2 id="modal-title">Book Title</h2>
+        <p id="modal-author">Author</p>
+        <p id="modal-price">Price</p>
+        <p id="modal-genre">Genre</p>
+        <p id="modal-synopsis">Synopsis</p>
+        <button id="modal-link">Buy</button>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Payment Methods</h4>
+        <div class="payment-method">
+          <img class="logo" src="../image/footer/bca logo.png" alt="BCA Logo">
+          <img class="logo" src="../image/footer/mandiri logo.png" alt="Mandiri Logo">
+          <img class="logo" src="../image/footer/bni logo.png" alt="BNI Logo">
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Shipping Methods</h4>
+        <div class="shipping-method">
+          <img class="logo" src="../image/footer/idexpress logo.png" alt="JNE Logo">
+          <br>
+          <img class="logo" src="../image/footer/anteraja logo.png" alt="jnt Logo">
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Social Media</h4>
+        <div class="social-media">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="../image/footer/instagram logo.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="../image/footer/facebook logo.png" alt="Facebook">
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <img src="../image/footer/x logo.png" alt="Twitter">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript" src="../script.js"></script>
+</body>
+</html>
